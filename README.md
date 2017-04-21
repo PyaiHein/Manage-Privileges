@@ -8,7 +8,7 @@ The professor’s solution is to create a small program, called runpriv, that wi
 The program runpriv works as follows:
 (a) Check that the student is running the program by comparing the real UID of the process with that of the
 student. (Assume you are the student for this testing.) If the test fails, print an error message and exit.
-(b) Prompttheuserforhisorherpassword,andvalidateitagainsttheauthenticationcredentialintheUCDavis Central Authentication System (use the program kinit(1) for this). If the password entered is incorrect, print an error message and exit.
+(b) Prompt the user for his or her password, and validate it against the authentication credential in the UCDavis Central Authentication System (use the program kinit(1) for this). If the password entered is incorrect, print an error message and exit.
 (c) If the current working directory does not contain a file called sniff, print an error message and exit.
 (d) If sniff is not owned by the student, or is not executable by the owner of the file, or can be read, written, or executed by anyone else (except, of course, root), print an error message and exit. This step checks that the student owns the file; that the student can execute it; and that no-one else has any rights over it.
 (e) If sniff was created or modified over 1 minute ago, print an error message and exit.
